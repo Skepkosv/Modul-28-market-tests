@@ -40,11 +40,11 @@ def test_open_Moscow(web_browser):
     page.find_run_btn.click()
     assert page.open_new_page == page.open_map
 
-def test_open_new-year2022(web_browser):
+def test_open_new_year2022(web_browser):
     page = MainPage(web_browser)
     page.find = 'новый год'
     page.find_run_btn_6.click()
-    assert page.open_new_page == page.open_new-year2022
+    assert page.open_new_page == page.open_new_year2022
 
 def test_open_express(web_browser):
     page = MainPage(web_browser)
@@ -58,11 +58,11 @@ def test_open_odezda(web_browser):
     page.find_run_btn_8.click()
     assert page.open_new_page == page.open_odezda
 
-def test_open_tovary-dlia-doma(web_browser):
+def test_open_tovary_dlia_doma(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'дом'
     page.find_run_btn_9.click()
-    assert page.open_new_page == page.open_tovary-dlia-doma
+    assert page.open_new_page == page.open_tovary_dlia_doma
 
 def test_open_elektronika(web_browser):
     page = MainPage(web_browser)
@@ -70,11 +70,11 @@ def test_open_elektronika(web_browser):
     page.find_run_btn_10.click()
     assert page.open_new_page == page.open_elektronika
 
-def test_open_bytovaia-tekhnika(web_browser):
+def test_open_bytovaia_tekhnika(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'бытовая техника'
     page.find_run_btn_11.click()
-    assert page.open_new_page == page.open_bytovaia-tekhnika
+    assert page.open_new_page == page.open_bytovaia_tekhnika
 
 def test_open_tovary_dlia_doma(web_browser):
     page = MainPage(web_browser)
@@ -198,23 +198,23 @@ def test_main_search_natural_spruse(web_browser):
         msg = 'Correct product in search "{}"'.format(title)
         assert 'санки' in title.lower(), msg
 
-def test_open_odezhda-obuv-i-aksessuary(web_browser):
+def test_open_odezhda_obuv_i_aksessuary(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'одежда и обувь'
     page.find_run_btn_16.click()
-    assert page.open_new_page == page.open_odezhda-obuv-i-aksessuary
+    assert page.open_new_page == page.open_odezhda_obuv_i_aksessuary
 
-def test_open_tovary-dlia-sporta-i-otdykha(web_browser):
+def test_open_tovary_dlia_sporta_i_otdykha(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'спорт и отдых'
     page.find_run_btn_17.click()
-    assert page.open_new_page == page.open_tovary-dlia-sporta-i-otdykha
+    assert page.open_new_page == page.open_tovary_dlia_sporta_i_otdykha
 
-def test_open_detskie-tovary(web_browser):
+def test_open_detskie_tovary(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'детские товары'
     page.find_run_btn_18.click()
-    assert page.open_new_page == page.open_detskie-tovary
+    assert page.open_new_page == page.open_detskie_tovary
 
 def test_open_elektronika(web_browser):
     page = MainPage(web_browser)
@@ -222,17 +222,17 @@ def test_open_elektronika(web_browser):
     page.find_run_btn_19.click()
     assert page.open_new_page == page.open_elektronika
 
-def test_open_kompiuternaia-tekhnika(web_browser):
+def test_open_kompiuternaia_tekhnika(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'компьютеры'
     page.find_run_btn_20.click()
-    assert page.open_new_page == page.open_kompiuternaia-tekhnika
+    assert page.open_new_page == page.open_kompiuternaia_tekhnika
 
-def test_open_choice-goods(web_browser):
+def test_open_choice_goods(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'как выбрать товар'
     page.find_run_btn_21.click()
-    assert page.open_new_page == page.open_choice-goods
+    assert page.open_new_page == page.open_choice_goods
 
 def test_open_conditions(web_browser):
     page = MainPage(web_browser)
@@ -252,11 +252,11 @@ def test_open_about(web_browser):
     page.find_run_btn_24.click()
     assert page.open_new_page == page.open_about
 
-def test_open_jobs-pages-usability(web_browser):
+def test_open_jobs_pages_usability(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'участие в исследованиях'
     page.find_run_btn_25.click()
-    assert page.open_new_page == page.open_jobs-pages-usability
+    assert page.open_new_page == page.open_jobs_pages_usability
 
 def test_open_return(web_browser):
     page = MainPage(web_browser)
@@ -282,23 +282,23 @@ def test_open_marketaff(web_browser):
     page.find_run_btn_29.click()
     assert page.open_new_page == page.open_marketaff
 
-def test_open_yandex-market-in-facebook(web_browser):
+def test_open_yandex_market_in_facebook(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'яндекс маркет в facebook'
     page.find_run_btn_30.click()
-    assert page.open_new_page == page.open_yandex-market-in-facebook
+    assert page.open_new_page == page.open_yandex_market_in_facebook
 
-def test_open_yandex-market-in-vk(web_browser):
+def test_open_yandex_market_in_vk(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'яндекс маркет в vk'
     page.find_run_btn_31.click()
-    assert page.open_new_page == page.open_yandex-market-in-vk
+    assert page.open_new_page == page.open_yandex_market_in_vk
 
-def test_open_yandex-market-in-instagram(web_browser):
+def test_open_yandex_market_in_instagram(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'яндекс маркет в instagram'
     page.find_run_btn_32.click()
-    assert page.open_new_page == page.open_yandex-market-in-instagram
+    assert page.open_new_page == page.open_yandex_market_in_instagram
 
 def test_open_auth(web_browser):
     page = MainPage(web_browser)
