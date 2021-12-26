@@ -12,3 +12,12 @@
 
 
 Описание: 
+
+Запуск тестов:
+Установка библтотек requirements.txt "при открытии файла .txt всплывает подсказка 'установить', согласиться с ней".
+
+https://chromedriver.chromium.org/downloads - скачать версию Selenium WebDriver, совместимую с вашим браузером (тесты проводились в браузере Chrome)
+
+В приведенном примере полная команда для запуска тестов:
+python -m pytest -v --driver Chrome --driver-path C:\Users\Skepk\Downloads\chromedriver.exe tests\tests_yanmark.py
+
