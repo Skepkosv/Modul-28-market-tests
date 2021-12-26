@@ -198,6 +198,159 @@ def test_main_search_natural_spruse(web_browser):
         msg = 'Correct product in search "{}"'.format(title)
         assert 'санки' in title.lower(), msg
 
+def test_check_sort_by_price(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'лыжи'
+    page.search_run_button.click()
+    page.sort_products_by_price.scroll_to_element()
+    page.sort_products_by_price.click()
+    page.wait_page_loaded()
+    all_prices = page.products_prices.get_text()
+    all_prices = [float(p.replace(' ', '')) for p in all_prices]
+    print(all_prices)
+    print(sorted(all_prices))
+    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
+
+def test_main_search_natural_spruse(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'коньки'
+    page.search_run_button.click()
+    assert page.products_titles.count() >= 1
+    for title in page.products_titles.get_text():
+        msg = 'Correct product in search "{}"'.format(title)
+        assert 'коньки' in title.lower(), msg
+
+def test_check_sort_by_price(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'фен'
+    page.search_run_button.click()
+    page.sort_products_by_price.scroll_to_element()
+    page.sort_products_by_price.click()
+    page.wait_page_loaded()
+    all_prices = page.products_prices.get_text()
+    all_prices = [float(p.replace(' ', '')) for p in all_prices]
+    print(all_prices)
+    print(sorted(all_prices))
+    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
+
+def test_main_search_natural_spruse(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'мыло'
+    page.search_run_button.click()
+    assert page.products_titles.count() >= 1
+    for title in page.products_titles.get_text():
+        msg = 'Correct product in search "{}"'.format(title)
+        assert 'мыло' in title.lower(), msg
+
+def test_check_sort_by_price(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'дрель'
+    page.search_run_button.click()
+    page.sort_products_by_price.scroll_to_element()
+    page.sort_products_by_price.click()
+    page.wait_page_loaded()
+    all_prices = page.products_prices.get_text()
+    all_prices = [float(p.replace(' ', '')) for p in all_prices]
+    print(all_prices)
+    print(sorted(all_prices))
+    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
+
+def test_main_search_natural_spruse(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'кастрюля'
+    page.search_run_button.click()
+    assert page.products_titles.count() >= 1
+    for title in page.products_titles.get_text():
+        msg = 'Correct product in search "{}"'.format(title)
+        assert 'кастрюля' in title.lower(), msg
+
+def test_check_sort_by_price(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'стол'
+    page.search_run_button.click()
+    page.sort_products_by_price.scroll_to_element()
+    page.sort_products_by_price.click()
+    page.wait_page_loaded()
+    all_prices = page.products_prices.get_text()
+    all_prices = [float(p.replace(' ', '')) for p in all_prices]
+    print(all_prices)
+    print(sorted(all_prices))
+    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
+
+def test_main_search_natural_spruse(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'стул'
+    page.search_run_button.click()
+    assert page.products_titles.count() >= 1
+    for title in page.products_titles.get_text():
+        msg = 'Correct product in search "{}"'.format(title)
+        assert 'стул' in title.lower(), msg
+
+def test_check_sort_by_price(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'кровать'
+    page.search_run_button.click()
+    page.sort_products_by_price.scroll_to_element()
+    page.sort_products_by_price.click()
+    page.wait_page_loaded()
+    all_prices = page.products_prices.get_text()
+    all_prices = [float(p.replace(' ', '')) for p in all_prices]
+    print(all_prices)
+    print(sorted(all_prices))
+    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
+
+def test_main_search_natural_spruse(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'подушка'
+    page.search_run_button.click()
+    assert page.products_titles.count() >= 1
+    for title in page.products_titles.get_text():
+        msg = 'Correct product in search "{}"'.format(title)
+        assert 'подушка' in title.lower(), msg
+
+def test_check_sort_by_price(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'одеяло'
+    page.search_run_button.click()
+    page.sort_products_by_price.scroll_to_element()
+    page.sort_products_by_price.click()
+    page.wait_page_loaded()
+    all_prices = page.products_prices.get_text()
+    all_prices = [float(p.replace(' ', '')) for p in all_prices]
+    print(all_prices)
+    print(sorted(all_prices))
+    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
+
+def test_main_search_natural_spruse(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'наволочка'
+    page.search_run_button.click()
+    assert page.products_titles.count() >= 1
+    for title in page.products_titles.get_text():
+        msg = 'Correct product in search "{}"'.format(title)
+        assert 'наволочка' in title.lower(), msg
+def test_check_sort_by_price(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'пододеяльник'
+    page.search_run_button.click()
+    page.sort_products_by_price.scroll_to_element()
+    page.sort_products_by_price.click()
+    page.wait_page_loaded()
+    all_prices = page.products_prices.get_text()
+    all_prices = [float(p.replace(' ', '')) for p in all_prices]
+    print(all_prices)
+    print(sorted(all_prices))
+    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
+
+def test_main_search_natural_spruse(web_browser):
+    page = MainPage(web_browser)
+    page.search = 'телевизор'
+    page.search_run_button.click()
+    assert page.products_titles.count() >= 1
+    for title in page.products_titles.get_text():
+        msg = 'Correct product in search "{}"'.format(title)
+        assert 'телевизор' in title.lower(), msg
+
 def test_open_odezhda_obuv_i_aksessuary(web_browser):
     page = MainPage(web_browser)
     page.find.element = 'одежда и обувь'
@@ -305,156 +458,3 @@ def test_open_auth(web_browser):
     page.find.element = 'войти'
     page.find_run_btn_33.click()
     assert page.open_new_page == page.open_auth
-
-def test_check_sort_by_price(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'лыжи'
-    page.search_run_button.click()
-    page.sort_products_by_price.scroll_to_element()
-    page.sort_products_by_price.click()
-    page.wait_page_loaded()
-    all_prices = page.products_prices.get_text()
-    all_prices = [float(p.replace(' ', '')) for p in all_prices]
-    print(all_prices)
-    print(sorted(all_prices))
-    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
-
-def test_main_search_natural_spruse(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'коньки'
-    page.search_run_button.click()
-    assert page.products_titles.count() >= 1
-    for title in page.products_titles.get_text():
-        msg = 'Correct product in search "{}"'.format(title)
-        assert 'санки' in title.lower(), msg
-
-def test_check_sort_by_price(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'фен'
-    page.search_run_button.click()
-    page.sort_products_by_price.scroll_to_element()
-    page.sort_products_by_price.click()
-    page.wait_page_loaded()
-    all_prices = page.products_prices.get_text()
-    all_prices = [float(p.replace(' ', '')) for p in all_prices]
-    print(all_prices)
-    print(sorted(all_prices))
-    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
-
-def test_main_search_natural_spruse(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'мыло'
-    page.search_run_button.click()
-    assert page.products_titles.count() >= 1
-    for title in page.products_titles.get_text():
-        msg = 'Correct product in search "{}"'.format(title)
-        assert 'санки' in title.lower(), msg
-
-def test_check_sort_by_price(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'дрель'
-    page.search_run_button.click()
-    page.sort_products_by_price.scroll_to_element()
-    page.sort_products_by_price.click()
-    page.wait_page_loaded()
-    all_prices = page.products_prices.get_text()
-    all_prices = [float(p.replace(' ', '')) for p in all_prices]
-    print(all_prices)
-    print(sorted(all_prices))
-    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
-
-def test_main_search_natural_spruse(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'кострюля'
-    page.search_run_button.click()
-    assert page.products_titles.count() >= 1
-    for title in page.products_titles.get_text():
-        msg = 'Correct product in search "{}"'.format(title)
-        assert 'санки' in title.lower(), msg
-
-def test_check_sort_by_price(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'стол'
-    page.search_run_button.click()
-    page.sort_products_by_price.scroll_to_element()
-    page.sort_products_by_price.click()
-    page.wait_page_loaded()
-    all_prices = page.products_prices.get_text()
-    all_prices = [float(p.replace(' ', '')) for p in all_prices]
-    print(all_prices)
-    print(sorted(all_prices))
-    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
-
-def test_main_search_natural_spruse(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'стул'
-    page.search_run_button.click()
-    assert page.products_titles.count() >= 1
-    for title in page.products_titles.get_text():
-        msg = 'Correct product in search "{}"'.format(title)
-        assert 'санки' in title.lower(), msg
-
-def test_check_sort_by_price(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'кровать'
-    page.search_run_button.click()
-    page.sort_products_by_price.scroll_to_element()
-    page.sort_products_by_price.click()
-    page.wait_page_loaded()
-    all_prices = page.products_prices.get_text()
-    all_prices = [float(p.replace(' ', '')) for p in all_prices]
-    print(all_prices)
-    print(sorted(all_prices))
-    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
-
-def test_main_search_natural_spruse(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'подушка'
-    page.search_run_button.click()
-    assert page.products_titles.count() >= 1
-    for title in page.products_titles.get_text():
-        msg = 'Correct product in search "{}"'.format(title)
-        assert 'санки' in title.lower(), msg
-
-def test_check_sort_by_price(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'одеяло'
-    page.search_run_button.click()
-    page.sort_products_by_price.scroll_to_element()
-    page.sort_products_by_price.click()
-    page.wait_page_loaded()
-    all_prices = page.products_prices.get_text()
-    all_prices = [float(p.replace(' ', '')) for p in all_prices]
-    print(all_prices)
-    print(sorted(all_prices))
-    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
-
-def test_main_search_natural_spruse(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'наволочка'
-    page.search_run_button.click()
-    assert page.products_titles.count() >= 1
-    for title in page.products_titles.get_text():
-        msg = 'Correct product in search "{}"'.format(title)
-        assert 'санки' in title.lower(), msg
-def test_check_sort_by_price(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'пододеяльник'
-    page.search_run_button.click()
-    page.sort_products_by_price.scroll_to_element()
-    page.sort_products_by_price.click()
-    page.wait_page_loaded()
-    all_prices = page.products_prices.get_text()
-    all_prices = [float(p.replace(' ', '')) for p in all_prices]
-    print(all_prices)
-    print(sorted(all_prices))
-    assert all_prices == sorted(all_prices), "Sort by price doesn't work!"
-
-def test_main_search_natural_spruse(web_browser):
-    page = MainPage(web_browser)
-    page.search = 'телевизор'
-    page.search_run_button.click()
-    assert page.products_titles.count() >= 1
-    for title in page.products_titles.get_text():
-        msg = 'Correct product in search "{}"'.format(title)
-        assert 'санки' in title.lower(), msg
