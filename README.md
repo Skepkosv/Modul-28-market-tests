@@ -22,3 +22,4 @@ https://chromedriver.chromium.org/downloads - скачать версию Seleni
 
 python -m pytest -v --driver Chrome --driver-path C:\Users\Skepk\Downloads\chromedriver.exe tests\tests_yanmark.py
 
+Тесты проверяют открытие основных разделов сайта интерне-магазина, поиск различных категорий товаров в различных вариациях.
