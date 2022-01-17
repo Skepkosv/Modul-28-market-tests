@@ -106,35 +106,35 @@ def test_check_wrong_input_in_search0(web_browser):
     """ Make sure that wrong keyboard layout input works fine. """
     page = MainPage(web_browser)
     # Try to enter "плэйстэйшн5" with Russian keyboard:
-    page.search = 'черная полночь'
+    page.search = 'здфн ыефешщт 5'
     page.search_run_button.click()
     # Verify that user can see the list of products:
     assert page.products_titles.count() >= 1
     # Make sure user found the relevant products
     for title in page.products_titles.get_text():
         msg = 'Wrong product in search "{}"'.format(title)
-        assert 'sony dualsense' in title.lower(), msg
+        assert 'playstation 5' in title.lower(), msg
 
 def test_check_main_search_eng(web_browser):
     """ Make sure main search works fine. """
     page = MainPage(web_browser)
-    page.search = 'Геймпад Sony DualSense'
+    page.search = 'playstation 5'
     page.search_run_button.click()
     # Verify that user can see the list of products:
     assert page.products_titles.count() >= 1
     # Make sure user found the relevant products
     for title in page.products_titles.get_text():
         msg = 'Correct product in search "{}"'.format(title)
-        assert 'Геймпад Sony DualSense' in title.lower(), msg
+        assert 'playstation 5' in title.lower(), msg
 
 def test_check_wrong_input_in_search1(web_browser):
     page = MainPage(web_browser)
-    page.search = 'Геймпад Sony DualSense, черная полночь'
+    page.search = 'здфн ыефешщт 5'
     page.search_run_button.click()
     assert page.products_titles.count() >= 1
     for title in page.products_titles.get_text():
         msg = 'Wrong product in search "{}"'.format(title)
-        assert 'Геймпад Sony DualSense, черная полночь' in title.lower(), msg
+        assert 'playstation 5' in title.lower(), msg
 
 @pytest.mark.xfail(reason="Filter by price doesn't work")
 def test_check_sort_by_price10(web_browser):
@@ -307,12 +307,13 @@ def test_check_sort_by_price1(web_browser):
 
 def test_main_search_natural_spruses1(web_browser):
     page = MainPage(web_browser)
-    page.search = 'Комплект наволочек 2шт Simple House "Levita" 50х70 см'
+    page.search = 'наволочка'
     page.search_run_button.click()
     assert page.products_titles.count() >= 1
     for title in page.products_titles.get_text():
         msg = 'Correct product in search "{}"'.format(title)
-        assert 'Комплект наволочек 2шт Simple House "Levita" 50х70 см' in title.lower(), msg
+        assert 'наволочка' in title.lower(), msg
+
 def test_check_sort_by_price2(web_browser):
     page = MainPage(web_browser)
     page.search = 'пододеяльник'
@@ -441,4 +442,3 @@ def test_krasota(web_browser):
     page.find_run_button.click()
     page.find_run_btn_35.click()
     assert page.find_run_btn_35
-
