@@ -58,8 +58,8 @@ class MainPage(WebPage):
     # "детям" cсылка на вэб-элемент
     find_run_btn_12 = WebElement(xpath='//div[7]/div[1]/a[1]/span[1]')
 
-    # "спорт" cсылка на вэб-элемент
-    find_run_btn_13 = WebElement(xpath='//div[8]/div/a/span')
+    # "строительство и ремонт" cсылка на вэб-элемент
+    find_run_btn_13 = WebElement(xpath='//*[@id="catalogPopup"]/div/div/div/div/div/div/div[1]/div/ul/li[8]/a')
 
     # "трансляции" ссылка на вэб-элемент
     find_run_btn_14 = WebElement(xpath='//div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]')
@@ -129,3 +129,9 @@ class MainPage(WebPage):
 
     # "войти" ссылка на вэб-элемент
     find_run_btn_33 = WebElement(xpath='//div[5]/div/div/div[1]/a/span')
+
+    # "продукты питания" ссылка на вэб-элемент
+    find_run_btn_34 = WebElement(xpath='//*[@id="catalogPopup"]/div/div/div/div/div/div/div[1]/div/ul/li[9]/a/span')
+
+    # "красота и гигиена" ссылка на вэб-элемент
+    find_run_btn_35 = WebElement(xpath='//*[@id="catalogPopup"]/div/div/div/div/div/div/div[1]/div/ul/li[10]/a/span')
