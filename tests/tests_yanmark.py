@@ -105,35 +105,35 @@ def test_check_wrong_input_in_search0(web_browser):
     """ Make sure that wrong keyboard layout input works fine. """
     page = MainPage(web_browser)
     # Try to enter "плэйстэйшн5" with Russian keyboard:
-    page.search = 'здфн ыефешщт 5'
+    page.search = 'черная полночь'
     page.search_run_button.click()
     # Verify that user can see the list of products:
     assert page.products_titles.count() >= 1
     # Make sure user found the relevant products
     for title in page.products_titles.get_text():
         msg = 'Wrong product in search "{}"'.format(title)
-        assert 'playstation 5' in title.lower(), msg
+        assert 'sony dualsense' in title.lower(), msg
 
 def test_check_main_search_eng(web_browser):
     """ Make sure main search works fine. """
     page = MainPage(web_browser)
-    page.search = 'playstation 5'
+    page.search = 'Геймпад Sony DualSense'
     page.search_run_button.click()
     # Verify that user can see the list of products:
     assert page.products_titles.count() >= 1
     # Make sure user found the relevant products
     for title in page.products_titles.get_text():
         msg = 'Correct product in search "{}"'.format(title)
-        assert 'playstation 5' in title.lower(), msg
+        assert 'Геймпад Sony DualSense' in title.lower(), msg
 
 def test_check_wrong_input_in_search1(web_browser):
     page = MainPage(web_browser)
-    page.search = 'здфн ыефешщт 5'
+    page.search = 'Геймпад Sony DualSense, черная полночь'
     page.search_run_button.click()
     assert page.products_titles.count() >= 1
     for title in page.products_titles.get_text():
         msg = 'Wrong product in search "{}"'.format(title)
-        assert 'playstation 5' in title.lower(), msg
+        assert 'Геймпад Sony DualSense, черная полночь' in title.lower(), msg
 
 @pytest.mark.xfail(reason="Filter by price doesn't work")
 def test_check_sort_by_price10(web_browser):
@@ -262,12 +262,12 @@ def test_check_sort_by_price5(web_browser):
 
 def test_main_search_natural_spruse4(web_browser):
     page = MainPage(web_browser)
-    page.search = 'стул'
+    page.search = 'табурет nika эконом 2 (тэ2), металл/искусственная кожа, цвет: слоновая кость'
     page.search_run_button.click()
     assert page.products_titles.count() >= 1
     for title in page.products_titles.get_text():
         msg = 'Correct product in search "{}"'.format(title)
-        assert 'стул' in title.lower(), msg
+        assert 'табурет nika эконом 2 (тэ2), металл/искусственная кожа, цвет: слоновая кость' in title.lower(), msg
 
 def test_check_sort_by_price4(web_browser):
     page = MainPage(web_browser)
@@ -306,12 +306,12 @@ def test_check_sort_by_price1(web_browser):
 
 def test_main_search_natural_spruses1(web_browser):
     page = MainPage(web_browser)
-    page.search = 'наволочка'
+    page.search = 'Комплект наволочек 2шт Simple House "Levita" 50х70 см'
     page.search_run_button.click()
     assert page.products_titles.count() >= 1
     for title in page.products_titles.get_text():
         msg = 'Correct product in search "{}"'.format(title)
-        assert 'наволочка' in title.lower(), msg
+        assert 'Комплект наволочек 2шт Simple House "Levita" 50х70 см' in title.lower(), msg
 def test_check_sort_by_price2(web_browser):
     page = MainPage(web_browser)
     page.search = 'пододеяльник'
@@ -336,31 +336,31 @@ def test_main_search_natural_spruse2(web_browser):
 
 def test_open_odezhda_obuv_i_aksessuary(web_browser):
     page = MainPage(web_browser)
-    page.find_run_btn.click()
+    page.find_run_button.click()
     page.find_run_btn_16.click()
     assert page.find_run_btn_16
 
 def test_open_tovary_dlia_sporta_i_otdykha(web_browser):
     page = MainPage(web_browser)
-    page.find_run_btn.click()
+    page.find_run_button.click()
     page.find_run_btn_17.click()
     assert page.find_run_btn_17
 
 def test_open_detskie_tovary(web_browser):
     page = MainPage(web_browser)
-    page.find_run_btn.click()
+    page.find_run_button.click()
     page.find_run_btn_18.click()
     assert page.find_run_btn_18
 
 def test_open_elektroniks(web_browser):
     page = MainPage(web_browser)
-    page.find_run_btn.click()
+    page.find_run_button.click()
     page.find_run_btn_19.click()
     assert page.find_run_btn_19
 
 def test_open_kompiuternaia_tekhnika(web_browser):
     page = MainPage(web_browser)
-    page.find_run_btn.click()
+    page.find_run_button.click()
     page.find_run_btn_20.click()
     assert page.find_run_btn_20
 
