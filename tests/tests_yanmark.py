@@ -74,8 +74,9 @@ def test_open_children(web_browser):
     page.find_run_btn_12.click()
     assert page.find_run_btn_12
 
-def test_open_sport(web_browser):
+def test_open_stroika(web_browser):
     page = MainPage(web_browser)
+    page.find_run_button.click()
     page.find_run_btn_13.click()
     assert page.find_run_btn_13
 
@@ -428,4 +429,16 @@ def test_open_auth(web_browser):
     page = MainPage(web_browser)
     page.find_run_btn_33.click()
     assert page.find_run_btn_33
+
+def test_prodyktu(web_browser):
+    page = MainPage(web_browser)
+    page.find_run_button.click()
+    page.find_run_btn_34.click()
+    assert page.find_run_btn_34
+
+def test_krasota(web_browser):
+    page = MainPage(web_browser)
+    page.find_run_button.click()
+    page.find_run_btn_35.click()
+    assert page.find_run_btn_35
 
