@@ -37,8 +37,8 @@ class MainPage(WebPage):
     # Кнопка вэб-элемента "Москва"
     find_run_btn_5 = WebElement(xpath='//div[1]/button[1]/div[2]')
 
-    # "Новый год" ссылка на вэб-элемент /html/body/div[1]/div[4]/noindex/div/div/div/div/div[1]/div[2]/div/a
-    find_run_btn_6 = WebElement(xpath='//a[contains(@href, "/special/new-year2022")]')
+    # "Яндекс.ру" ссылка на вэб-элемент
+    find_run_btn_6 = WebElement(xpath='//div[3]/noindex/div/div/div[1]/div/div/a[1]')
 
     # "экспресс" cсылка на вэб-элемент
     find_run_btn_7 = WebElement(xpath='//div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/span[1]')
@@ -59,7 +59,7 @@ class MainPage(WebPage):
     find_run_btn_12 = WebElement(xpath='//div[7]/div[1]/a[1]/span[1]')
 
     # "спорт" cсылка на вэб-элемент
-    find_run_btn_13 = WebElement(xpath='//div[8]/div[1]/a[1]/span[1]')
+    find_run_btn_13 = WebElement(xpath='//div[8]/div/a/span')
 
     # "трансляции" ссылка на вэб-элемент
     find_run_btn_14 = WebElement(xpath='//div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/span[1]')
