@@ -34,7 +34,7 @@ def test_open_Moscow(web_browser):
     page.find_run_btn_5.click()
     assert page.find_run_btn_5
 
-def test_open_new_year2022(web_browser):
+def test_open_yandex(web_browser):
     page = MainPage(web_browser)
     page.find_run_btn_6.click()
     assert page.find_run_btn_6
